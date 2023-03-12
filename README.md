@@ -1,5 +1,7 @@
 
-## ColorPal
+## colorpal
+
+# make your life more colorful with colorpal.
 
 Inspiration:
 
