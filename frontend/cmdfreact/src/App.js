@@ -1,7 +1,7 @@
 import logo from './logo.svg';
 import './App.css';
 import React, { useState } from 'react';
-import { Link, animateScroll as scroll } from "react-scroll";
+// import { Link, animateScroll as scroll } from "react-scroll";
 import FileUpload from "./components/FileUpload.tsx";
 import "bootstrap/dist/css/bootstrap.min.css";
 import colorpal2 from './colorpal2.png';
