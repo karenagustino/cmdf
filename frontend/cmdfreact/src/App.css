@@ -4,7 +4,9 @@
   color: #FD2B2B;
   color: #CF2017;
   color: #1742CF;
+  color:rgb(80, 97, 175);
 }
+
 
 .App {
   text-align: center;
@@ -21,8 +23,13 @@
   }
 }
 
+.bg {
+  background-image: linear-gradient(#9BC5E1,rgb(80, 97, 175));
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
 .App-header {
-  background-color: #282c34;
+  
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -30,11 +37,17 @@
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
+  font-size: 70px;
+  font-weight: bold;
+  font-family: Georgia, 'Times New Roman', Times, serif;
 }
+
+
 
 .App-link {
   color: #61dafb;
 }
+
 
 @keyframes App-logo-spin {
   from {
@@ -47,7 +60,7 @@
 
 .button {
   
-  background-color: #4CAF50; /* Green */
+  background-color: #FD2B2B; /* Green */
   border: none;
   color: white;
   padding: 15px 32px;
@@ -59,28 +72,58 @@
 }
 
 .button:hover {
-  background-color: rgb(76, 97, 175);
+  background-color: #2888c8;
   color: white;
 }
 
+
+.getstartedbutton {
+    background-color: white; /* Green */
+    border: none;
+    color: black;
+    padding: 10px 30px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 30px;
+    border-radius: 10px;
+    margin-top: 10px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.getstartedbutton:hover {
+  background: linear-gradient(to right, #6666ff, #0099ff , #00ff00, #ff3399, #6666ff);
+  -webkit-background-clip: border-box;
+  background-clip: border-box;
+  color: white;
+  animation: rainbow_animation 6s ease-in-out infinite;
+  background-size: 400% 100%;
+}
 
 
 
 
 .navbar {
   width: 100%;
-  background-color: #2888c8;
+  background-color:rgba(0, 0, 0, 0.668);
+  /* background-image: linear-gradient(#ca423b,#9BC5E1); */
   overflow: auto;
+  position: fixed;
 }
 
 /* Navbar links */
 .navbar a {
   float: right;
   text-align: center;
-  padding: 12px;
+  padding: 15px;
   color: white;
   text-decoration: none;
-  font-size: 17px;
+  font-size: 20px;
+  font-weight: bold;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  
+  
+  
 }
 
 /* Current/active navbar link */
@@ -88,9 +131,41 @@
   background-color: #FD2B2B;
 }
 
+.title {
+  float: left;
+  text-align: center;
+  padding: 10px;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.tagline {
+  float: left;
+  text-align: center;
+  padding: 10px;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 20px;
+  margin-top: 30px;
+}
 /* Navbar links on mouse-over */
-.navbar a:hover {
-  background-color: #000;
+/* .navbar a:hover {
+  background-color: #e89591;
+  
+} */
+.about {
+  float: left;
+  text-align: center;
+  padding: 10px;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 50px;
 }
 
 
@@ -101,3 +176,107 @@
     display: block;
   }
 }
+
+.AboutPCbg{
+  /*background-image: linear-gradient(rgb(80, 97, 175),#9BC5E1);*/
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.pcbody {
+  float: left;
+  text-align: center;
+  padding: 20px;
+  color: white;
+  font-size: 20px;
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: normal;
+}
+
+/* .Personal-Color {
+  float: center;
+  text-align:center;
+  padding: 10px;
+  color: white;
+  font-size: 70px;
+  font-weight: bold;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+
+} */
+
+/*rainbow color effect*/
+#shadowBox {
+  background-color: rgb(0, 0, 0);
+  /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.2);
+  /* Black w/opacity/see-through */
+  border: 3px solid;
+}
+
+.rainbow {
+  text-align: center;
+  text-decoration: underline;
+  font-size: 32px;
+  font-family: monospace;
+  letter-spacing: 5px;
+  font-size: 70px;
+  font-weight: bold;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.rainbow_text_animated {
+  background: linear-gradient(to right, #6666ff, #0099ff , #00ff00, #ff3399, #6666ff);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  animation: rainbow_animation 6s ease-in-out infinite;
+  background-size: 400% 100%;
+}
+
+@keyframes rainbow_animation {
+  0%,100% {
+      background-position: 0 0;
+  }
+
+  50% {
+      background-position: 100% 0;
+  }
+}
+
+
+.uploadbody {
+  float: center;
+  text-align:center;
+  padding: 5px;
+  color: white;
+  font-size: 50px;
+  font-weight: bold;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.Upload-Here{
+  
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+
+html {
+	scroll-behavior: smooth;
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+	html {
+		scroll-behavior: auto;
+	}
+}
+
